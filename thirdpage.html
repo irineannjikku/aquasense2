@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: 000235;
+        }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>ENTER THE PAYMENT DETAILS</h1>
+            <div class="form-group">
+                <label for="credit-card-number">Credit card number:</label>
+                <input type="text" id="credit-card-number" placeholder="5647 8993 0000 0000" required>
+            </div>
+            <div class="form-group">
+                <label for="expiration-date">Expiring MM/YY:</label>
+                <input type="month" id="expiration-date" placeholder="05/24" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv-code">CVV Code:</label>
+                <input type="text" id="cvv-code" placeholder="123" pattern="[0-9]{3}" title="Three digits number" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Akshay" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="akshay@example.com" required>
+            </div>
+            <button type="submit">PAY</button>
+            <br>
+            <button type="button">Print the receipt</button>
+        </form>
+    </div>
+</body>
+</html>
